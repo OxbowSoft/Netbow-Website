@@ -1,0 +1,23 @@
+<div class="tile-box">
+  <div class="tile-img-box">
+    <img class="tile-img" src="{{imgPath}}" alt="plakat[]">
+  </div>
+  <div class="tile-info-box" [@divState]="state" (click)="OpenInfoBox()">
+    <div class="tile-title-box">
+      <h2 class="tile-title" [@titleState]="title">{{titleInput}}</h2>
+    </div>
+    <div class="tile-stars" [@starsState]="stars">
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+    </div>
+    <div class="tile-category-box" >
+      <p class="tile-category" [@categoryState]="category">{{categoryInput}}</p>
+    </div>
+    <div class="tile-dexcription-box">
+      <p [@descriptionState]="description" class="tile-description">{{descriptionInput}} </p>
+    </div>
+  </div>
+</div>

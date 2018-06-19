@@ -1,0 +1,9 @@
+<ox-header></ox-header>
+<div *ngIf="!loading">
+  <div *ngFor="let tile of movieList" >
+      <ox-tile titleInput="{{tile.name}}" imgPath="{{tile.imgPath}}" descriptionInput="{{tile.overview}}" categoryInput="{{tile.genre}}"></ox-tile>
+  </div>
+</div>
+<div *ngIf="loading">
+  <ox-spinner ></ox-spinner>
+</div>
