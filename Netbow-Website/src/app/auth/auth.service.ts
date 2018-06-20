@@ -13,7 +13,7 @@ export class AuthService {
   constructor(private auth:AngularFireAuth) { 
     this._auth = this.auth.auth;
 
-    this._auth.onAuthChanged( user => {
+    this._auth.onAuthStateChanged( user => {
       if(user) {
         this.isLoggedIn = true;
       }
