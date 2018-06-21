@@ -6,11 +6,11 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyDvk2-f4OAtiYZqaAtyrmwnUVbm-NMCZU8",
-    authDomain: "netbow-3248f.firebaseapp.com",
-    databaseURL: "https://netbow-3248f.firebaseio.com",
-    projectId: "netbow-3248f",
-    storageBucket: "netbow-3248f.appspot.com",
-    messagingSenderId: "1024148038191"
+    apiKey: 'AIzaSyDvk2-f4OAtiYZqaAtyrmwnUVbm-NMCZU8',
+    authDomain: 'netbow-3248f.firebaseapp.com',
+    databaseURL: 'https://netbow-3248f.firebaseio.com',
+    projectId: 'netbow-3248f',
+    storageBucket: 'netbow-3248f.appspot.com',
+    messagingSenderId: '1024148038191'
   }
 };
