@@ -2,6 +2,7 @@ import { Component, OnInit,  Input} from '@angular/core';
 import {trigger, state, style, transition, animate} from '@angular/animations';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'ox-tile',
   templateUrl: './tile.component.html',
   styleUrls: ['./tile.component.css'],
@@ -76,7 +77,7 @@ export class TileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // TODO: NOT DATA SECURIT
+    // TODO: NOT DATA SECURITY
     this.imgPath = 'https://image.tmdb.org/t/p/w500' + this.imgPath;
   }
 
@@ -95,7 +96,7 @@ export class TileComponent implements OnInit {
       this.category = 'show';
     }
   }
-  // TODO: IMPLENTATION CHECKED STARS
+  // TODO: IMPLANTATION CHECKED STARS
   // TODO: FIX IT DISPLAY CATEGORY
   // TODO: FIX IT BLACK POLE IN TILE TITLE
   // TODO: DESCRIPTION

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'ox-spinner',
   templateUrl: './spinner.component.html',
   styleUrls: ['./spinner.component.css']
