@@ -1,5 +1,4 @@
 import { UiModule } from './ui/ui.module';
-import { MovieService } from './services/movie-service/movie.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from 'angularfire2';
@@ -12,6 +11,7 @@ import { TilesModule } from './movie-screen/tiles/tiles.module';
 import { environment } from '../environments/environment';
 import { RoutingModule } from './routing/routing.module';
 import { AuthService } from './auth/auth.service';
+import { MovieService } from './movie-screen/service/movie.service';
 
 @NgModule({
   declarations: [

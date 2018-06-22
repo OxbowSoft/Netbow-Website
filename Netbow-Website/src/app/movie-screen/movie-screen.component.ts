@@ -1,6 +1,6 @@
-import { MovieService } from './../services/movie-service/movie.service';
 import { Component, OnInit } from '@angular/core';
-import { Movie } from '../entities/movies/movie';
+import { Movie } from './models/movie.model';
+import { MovieService } from './service/movie.service';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -17,12 +17,7 @@ export class MovieScreenComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.movieService.getMovie((data) => {
-      this.loading = false;
-      this.movieList = data;
-    }, () => {
-      this.loading = true;
-    });
+    this.movieService.getMovies();
   }
 
 }
